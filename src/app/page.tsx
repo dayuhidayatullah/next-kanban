@@ -1,10 +1,13 @@
+import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 
 export default function Home() {
   return (
-    <div className='container flex'>
+    <div className='flex'>
       <Sidebar></Sidebar>
-      <Header></Header>
+      <div>
+        <Header></Header>
+      </div>
     </div>
   );
 }
