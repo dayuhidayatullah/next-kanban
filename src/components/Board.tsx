@@ -1,6 +1,7 @@
 import React from 'react';
 import { LuPlus } from 'react-icons/lu';
 import { SlOptions } from 'react-icons/sl';
+import { CardTask } from './CardTask';
 
 export const Board = ({ titleBoard }: { titleBoard: string }) => {
   return (
@@ -12,6 +13,15 @@ export const Board = ({ titleBoard }: { titleBoard: string }) => {
           <SlOptions></SlOptions>
         </div>
       </div>
+      <CardTask
+        taskTitle='Ngapain yak'
+        companyName='test23'
+        tags={['makansiang']}
+        description='Testavsdadsa'
+        assignedTo={['naim', 'summirah']}
+        date={new Date().toDateString()}
+        comment={2}
+      />
     </div>
   );
 };
