@@ -2,7 +2,7 @@ import React from 'react';
 import { CiSearch } from 'react-icons/ci';
 import { LiaFilterSolid } from 'react-icons/lia';
 import { Tabs } from './Tabs';
-export default function Header() {
+export default function Header({onClickFilter}: {onClickFilter: Function}) {
   return (
     <div className='w-full'>
       <div className='w-full flex justify-between px-5 h-16 items-center mt-1'>
@@ -34,7 +34,7 @@ export default function Header() {
             />
           </label>
 
-          <button className='flex gap-2 items-center border-gray-200 border-[2px] rounded-lg px-3'>
+          <button className='flex gap-2 items-center border-gray-200 border-[2px] rounded-lg px-3' onClick={() => onClickFilter()}>
             <LiaFilterSolid className='w-6 h-6' />
             <p>Filters</p>
           </button>

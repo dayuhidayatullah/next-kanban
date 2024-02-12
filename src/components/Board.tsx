@@ -5,7 +5,7 @@ import { CardTask } from './CardTask';
 
 export const Board = ({ titleBoard }: { titleBoard: string }) => {
   return (
-    <div className='container max-w-[250px] bg-[#f9fbfc] px-3 py-3 rounded-md'>
+    <div className='container max-w-[300px] bg-[#f9fbfc] px-3 py-3 rounded-md'>
       <div className='flex justify-between items-center'>
         <p>{titleBoard}</p>
         <div className='flex gap-1'>
